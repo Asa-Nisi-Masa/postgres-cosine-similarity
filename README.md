@@ -15,17 +15,15 @@ sudo make install
 ### Usage
 
 ```
-CREATE EXTENSION cosine_sim;
-```
-```
+postgres=# CREATE EXTENSION cosine_sim;
+CREATE EXTENSION
+
 postgres=# SELECT cosine_sim(ARRAY[1,2,3], ARRAY[1,2,3]);
  cosine_sim 
 ------------
           1
 (1 row)
-```
 
-```
 postgres=# SELECT cosine_sim(ARRAY[1,2,3], ARRAY[4, 5, 6]);
  cosine_sim 
 ------------
